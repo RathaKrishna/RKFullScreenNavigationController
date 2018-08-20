@@ -6,9 +6,19 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SecondViewController.h"
+
+#import "BaseNavigaionViewController.h"
+
+
 
 @interface AppDelegate ()
-
+{
+    BaseNavigaionViewController * nav1;
+    BaseNavigaionViewController * nav2;
+    
+}
 @end
 
 @implementation AppDelegate
@@ -16,9 +26,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initRootVC];
     return YES;
 }
 
+- (void)initRootVC {
+    
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    navigationBar.tintColor = mainColor;
+    navigationBar.barTintColor = [UIColor whiteColor];
+    [navigationBar setTranslucent:YES];
+    
+    ViewController *VC1 = [[ViewController alloc] init];
+    nav1 = [[BaseNavigaionViewController alloc] initWithRootViewController:VC1];
+    
+    SecondViewController *VC2 = [[SecondViewController alloc] init];
+    nav2 = [[BaseNavigaionViewController alloc] initWithRootViewController:VC2];
+  
+    
+    VC1.title = @"First";
+    VC2.title = @"Second";
+    
+    
+    NSArray *viewCtrs = @[nav1,nav2];
+    UITabBarController *rootTabbarCtr  = [[UITabBarController alloc] init];
+
+
+    [rootTabbarCtr setViewControllers:viewCtrs animated:YES];
+    self.window.rootViewController = rootTabbarCtr;
+  
+    UITabBar *tabbar = rootTabbarCtr.tabBar;
+    UITabBarItem *item1 = [tabbar.items objectAtIndex:0];
+    UITabBarItem *item2 = [tabbar.items objectAtIndex:1];
+    tabbar.tintColor = mainColor;
+    
+    item1.selectedImage = [[UIImage imageNamed:@"ic_tabbar_home_pressed"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    item1.image = [[UIImage imageNamed:@"ic_tabbar_home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item2.selectedImage = [[UIImage imageNamed:@"ic_tabbar_profile_pressed"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    item2.image = [[UIImage imageNamed:@"ic_tabbar_profile_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+   
+     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:mainColor,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -13,6 +13,13 @@
 		049F2B93212A607A00B0E1D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049F2B92212A607A00B0E1D5 /* Assets.xcassets */; };
 		049F2B96212A607A00B0E1D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049F2B94212A607A00B0E1D5 /* LaunchScreen.storyboard */; };
 		049F2B99212A607A00B0E1D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2B98212A607A00B0E1D5 /* main.m */; };
+		049F2BA2212A62DF00B0E1D5 /* RKScreenCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BA1212A62DF00B0E1D5 /* RKScreenCaptureView.m */; };
+		049F2BA5212A63B400B0E1D5 /* NSObject+RKAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BA4212A63B300B0E1D5 /* NSObject+RKAddition.m */; };
+		049F2BA8212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BA7212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.m */; };
+		049F2BAB212A669000B0E1D5 /* RKFullScreenNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BAA212A669000B0E1D5 /* RKFullScreenNavigationController.m */; };
+		049F2BAF212A6B5600B0E1D5 /* BaseNavigaionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BAE212A6B5600B0E1D5 /* BaseNavigaionViewController.m */; };
+		049F2BB3212A6C3F00B0E1D5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BB2212A6C3F00B0E1D5 /* SecondViewController.m */; };
+		049F2BB6212A6C5200B0E1D5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F2BB5212A6C5200B0E1D5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,21 @@
 		049F2B95212A607A00B0E1D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049F2B97212A607A00B0E1D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049F2B98212A607A00B0E1D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		049F2BA0212A62DF00B0E1D5 /* RKScreenCaptureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKScreenCaptureView.h; sourceTree = "<group>"; };
+		049F2BA1212A62DF00B0E1D5 /* RKScreenCaptureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKScreenCaptureView.m; sourceTree = "<group>"; };
+		049F2BA3212A63B300B0E1D5 /* NSObject+RKAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RKAddition.h"; sourceTree = "<group>"; };
+		049F2BA4212A63B300B0E1D5 /* NSObject+RKAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RKAddition.m"; sourceTree = "<group>"; };
+		049F2BA6212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RKFSNavigationViewController.h"; sourceTree = "<group>"; };
+		049F2BA7212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RKFSNavigationViewController.m"; sourceTree = "<group>"; };
+		049F2BA9212A669000B0E1D5 /* RKFullScreenNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKFullScreenNavigationController.h; sourceTree = "<group>"; };
+		049F2BAA212A669000B0E1D5 /* RKFullScreenNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFullScreenNavigationController.m; sourceTree = "<group>"; };
+		049F2BAD212A6B5600B0E1D5 /* BaseNavigaionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigaionViewController.h; sourceTree = "<group>"; };
+		049F2BAE212A6B5600B0E1D5 /* BaseNavigaionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigaionViewController.m; sourceTree = "<group>"; };
+		049F2BB1212A6C3F00B0E1D5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		049F2BB2212A6C3F00B0E1D5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		049F2BB4212A6C5200B0E1D5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		049F2BB5212A6C5200B0E1D5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		049F2BB7212A8B2900B0E1D5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +80,56 @@
 		049F2B88212A607800B0E1D5 /* RKFullScreenNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				049F2BB0212A6BF800B0E1D5 /* Demo */,
+				049F2B9F212A62A200B0E1D5 /* Library */,
 				049F2B89212A607800B0E1D5 /* AppDelegate.h */,
 				049F2B8A212A607800B0E1D5 /* AppDelegate.m */,
-				049F2B8C212A607800B0E1D5 /* ViewController.h */,
-				049F2B8D212A607800B0E1D5 /* ViewController.m */,
 				049F2B8F212A607900B0E1D5 /* Main.storyboard */,
 				049F2B92212A607A00B0E1D5 /* Assets.xcassets */,
 				049F2B94212A607A00B0E1D5 /* LaunchScreen.storyboard */,
 				049F2B97212A607A00B0E1D5 /* Info.plist */,
 				049F2B98212A607A00B0E1D5 /* main.m */,
+				049F2BB7212A8B2900B0E1D5 /* PrefixHeader.pch */,
 			);
 			path = RKFullScreenNavigationController;
+			sourceTree = "<group>";
+		};
+		049F2B9F212A62A200B0E1D5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				049F2BA0212A62DF00B0E1D5 /* RKScreenCaptureView.h */,
+				049F2BA1212A62DF00B0E1D5 /* RKScreenCaptureView.m */,
+				049F2BA3212A63B300B0E1D5 /* NSObject+RKAddition.h */,
+				049F2BA4212A63B300B0E1D5 /* NSObject+RKAddition.m */,
+				049F2BA6212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.h */,
+				049F2BA7212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.m */,
+				049F2BA9212A669000B0E1D5 /* RKFullScreenNavigationController.h */,
+				049F2BAA212A669000B0E1D5 /* RKFullScreenNavigationController.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		049F2BAC212A6B2000B0E1D5 /* Base_Class */ = {
+			isa = PBXGroup;
+			children = (
+				049F2BAD212A6B5600B0E1D5 /* BaseNavigaionViewController.h */,
+				049F2BAE212A6B5600B0E1D5 /* BaseNavigaionViewController.m */,
+			);
+			path = Base_Class;
+			sourceTree = "<group>";
+		};
+		049F2BB0212A6BF800B0E1D5 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				049F2B8C212A607800B0E1D5 /* ViewController.h */,
+				049F2B8D212A607800B0E1D5 /* ViewController.m */,
+				049F2BAC212A6B2000B0E1D5 /* Base_Class */,
+				049F2BB1212A6C3F00B0E1D5 /* SecondViewController.h */,
+				049F2BB2212A6C3F00B0E1D5 /* SecondViewController.m */,
+				049F2BB4212A6C5200B0E1D5 /* DetailViewController.h */,
+				049F2BB5212A6C5200B0E1D5 /* DetailViewController.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049F2BB3212A6C3F00B0E1D5 /* SecondViewController.m in Sources */,
+				049F2BA2212A62DF00B0E1D5 /* RKScreenCaptureView.m in Sources */,
 				049F2B8E212A607800B0E1D5 /* ViewController.m in Sources */,
+				049F2BAB212A669000B0E1D5 /* RKFullScreenNavigationController.m in Sources */,
 				049F2B99212A607A00B0E1D5 /* main.m in Sources */,
+				049F2BB6212A6C5200B0E1D5 /* DetailViewController.m in Sources */,
+				049F2BA8212A644A00B0E1D5 /* UIViewController+RKFSNavigationViewController.m in Sources */,
 				049F2B8B212A607800B0E1D5 /* AppDelegate.m in Sources */,
+				049F2BAF212A6B5600B0E1D5 /* BaseNavigaionViewController.m in Sources */,
+				049F2BA5212A63B400B0E1D5 /* NSObject+RKAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/Git_pro/RKFullScreenNavigationController/RKFullScreenNavigationController/PrefixHeader.pch;
 				INFOPLIST_FILE = RKFullScreenNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/Git_pro/RKFullScreenNavigationController/RKFullScreenNavigationController/PrefixHeader.pch;
 				INFOPLIST_FILE = RKFullScreenNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

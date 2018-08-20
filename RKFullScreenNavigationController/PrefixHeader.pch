@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  RKFullScreenNavigationController
+//
+//  Created by mac on 20/08/18.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define screenWidth [[UIScreen mainScreen] bounds].size.width
+#define screenHeight [[UIScreen mainScreen] bounds].size.height
+#define mainColor [UIColor colorWithRed:0/255.0 green:198/255.0 blue:142/255.0 alpha:1.0]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
